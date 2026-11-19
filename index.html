@@ -5,8 +5,11 @@
   <title>Переадресация...</title>
   <script>
     const randomNum = Math.floor(Math.random() * 3) + 1;
-    const formUrl = "https://forms.yandex.ru/cloud/6afe8efd1f1eb5ba1992a3a0" + randomNum;
-    window.location.replace(formUrl);
+    const domain = "https://forms.yandex." + "ru";
+    const path = "/cloud/6afe8efd1f1eb5ba1992a3a0/";
+    const param = "?answer_integer_9008994322448536=";
+    
+    window.location.replace(domain + path + param + randomNum);
   </script>
 </head>
 <body>
